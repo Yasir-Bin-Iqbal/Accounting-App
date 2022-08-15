@@ -1,0 +1,84 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.MyAccounts" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="button" >
+
+        <item name="android:layout_width" >wrap_content </item>
+        <item name="android:layout_height">wrap_content</item>
+
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:backgroundTint">#78CFF6 </item>
+        <item name="android:textSize">14sp</item>
+        <item name="cornerRadius">20dp</item>
+
+        <item name="strokeColor">#FFFFFF</item>
+        <item name="strokeWidth">4dp</item>
+
+    </style>
+
+    <style name="Card">
+
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">120dp</item>
+        <item name="android:layout_margin">10dp</item>
+       <item name="cardBackgroundColor">#78CFF6</item>
+        <item name="cardCornerRadius">20dp</item>
+        <item name="cardElevation">10dp</item>
+
+    </style>
+
+    <style name="Text">
+
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:letterSpacing">0.5</item>
+        <item name="android:textColor">#FBF6F6</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+
+    </style>
+
+
+    <style name="InputTextLayout">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">58dp</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:layout_marginStart">8dp</item>
+        <item name="android:layout_marginEnd">8dp</item>
+        <item name="android:elevation">5dp</item>
+        <item name="boxStrokeColor">#1034a6</item>
+        <item name="boxStrokeWidth">5dp</item>
+        <item name="boxStrokeWidthFocused">5dp</item>
+        <item name="hintAnimationEnabled">true</item>
+        <item name="hintEnabled">true</item>
+        <item name="hintTextColor">#0E0E0E</item>
+    </style>
+
+
+    <style name="TextInputEditText">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">#FFFFFF</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+
+
+</resources>
