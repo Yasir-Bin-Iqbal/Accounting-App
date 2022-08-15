@@ -28,6 +28,12 @@ public class Transactions extends AppCompatActivity {
         dialog = new Dialog(this);
 
     }
+    
+     @Override
+    public void onBackPressed() {
+        intent = new Intent(this,MainActivity.class);
+        startActivity(intent);
+    }
 
         public void createEntery (View view){
             intent = new Intent(getApplicationContext(), EnteriesActivity.class);
