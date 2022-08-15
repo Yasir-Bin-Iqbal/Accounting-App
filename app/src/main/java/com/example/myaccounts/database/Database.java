@@ -276,6 +276,9 @@ public class Database extends SQLiteOpenHelper {
 
 
     public void AdjTrialBalance() {
+        
+        if(AdjTBisEmpty()) {
+        
         List<LedgerEntery> ledgerEnteryList = getLedger();
         List<LedgerEntery> adjledgerEnterylist = getAdjLedger();
         List<LedgerEntery> remove = new ArrayList<>();
@@ -324,6 +327,7 @@ public class Database extends SQLiteOpenHelper {
             addAdjTrialBalance(trialBalance);
         }
         incomeStatement();
+     }
     }
 
 
@@ -671,8 +675,19 @@ public class Database extends SQLiteOpenHelper {
 
         return asset;
     }
-
-
+    
+     public boolean AdjTBisEmpty(){
+        boolean b= false;
+        SQLiteDatabase db = this.getReadableDatabase();
+        String query = " SELECT COUNT(*) FROM " + Params.ADJ_TRIAL_B;
+        Cursor cursor = db.rawQuery(query,null);
+        cursor.moveToFirst();
+        if(cursor.getString(0).equals("0")){
+            b= true;
+        }
+        cursor.close();
+        return b;
+    }
 
 
 }
